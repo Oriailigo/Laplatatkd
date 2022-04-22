@@ -106,4 +106,7 @@ body{
   background-position: center center;
 }
 
-
+/* colores de los cards */
+.bg-rosa{
+  background-color: #FFDFD5;
+}
