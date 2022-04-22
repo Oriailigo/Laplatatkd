@@ -1,10 +1,10 @@
 from flask import render_template,request
-from .mock_data import quienesSomos, membership, contacto, sedesHorarios, botones_navbar,clase_info
+from .mock_data import quienesSomos, membership, contacto, sedesHorarios, botones_navbar,clase_info,noticias,beneficios
 
 class CustomRouter:
     # index
     def render_index(self):
-        return render_template('index.html', links = botones_navbar)
+        return render_template('index.html', links = botones_navbar, noti=noticias, bene=beneficios)
     
     #Aqui se detallan las 4 paginas de la barra de navegacion
     def render_membership(self):
